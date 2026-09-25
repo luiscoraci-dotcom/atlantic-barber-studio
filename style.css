@@ -117,6 +117,23 @@ h4 {
   background-size: cover;
   background-position: center;
   min-height: 250px;
+  body.inicio .contenedor,
+body.inicio section {
+    transform: scale(1.2);
+    transform-origin: top center;
+}
+body.inicio h1 {
+    font-size: 45px;
+}
+body.inicio h2 {
+    font-size: 35px;
+}
+body.inicio p {
+    font-size: 20px;
+}
+body.inicio .card {
+    min-height: 320px;
+}
 }
 body.inicio {
   background-image: url("https://i.pinimg.com/1200x/19/78/6a/19786a8f0b92079e0191e5d988a3ba16.jpg");
