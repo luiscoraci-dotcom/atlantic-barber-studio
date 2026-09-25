@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservas - Atlantic Barber Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="reservas">
+<section class="reserva">
+<h1>Reserva tu cita</h1>
+<p>
+Elige tu servicio, fecha y horario disponible.
+</p>
+<form onsubmit="enviarWhatsApp(); return false;">
+<label>Nombre completo</label>
+<input type="text" placeholder="Escribe tu nombre">
+<label>Número de WhatsApp</label>
+<input type="tel" placeholder="numero de celular">
+<label>Selecciona tu servicio</label>
+<select>
+<option>corte</option>
+<option>Corte + Asesoramiento</option>
+<option>Corte + Barba</option>
+<option>Corte + Cejas</option>
+<option>Barba</option>
+<option>Cejas</option>
+<option>Tinte</option>
+<option>Ondulado</option>
+</select>
+<label>Fecha</label>
+<input type="date">
+<label>Hora</label>
+<input type="time">
+<button type="submit">
+Confirmar reserva
+</button>
+</form>
+<a href="index.html">
+<button class="volver">
+Volver al inicio
+</button>
+</a>
+</section>
+  <script>
+function enviarWhatsApp(){
+let nombre = document.querySelector('input[type="text"]').value;
+let telefono = document.querySelector('input[type="tel"]').value;
+let servicio = document.querySelector('select').value;
+let fecha = document.querySelector('input[type="date"]').value;
+let hora = document.querySelector('input[type="time"]').value;
+let mensaje = 
+"Hola Atlantic Barber Studio%0A%0A" +
+"Nombre: " + nombre + "%0A" +
+"WhatsApp: +591 " + telefono + "%0A" +
+"Servicio: " + servicio + "%0A" +
+"Fecha: " + fecha + "%0A" +
+"Hora: " + hora;
+window.open(
+"https://wa.me/59178314737?text=" + mensaje,
+"_blank"
+);
+}
+</script>
+</body>
+</html>
