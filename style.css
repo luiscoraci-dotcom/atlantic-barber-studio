@@ -748,4 +748,31 @@ barbero h2 {
     font-size:13px;
     color:#e51b3e;
 }
+@media (max-width: 600px){
+  .lista-barberos,
+  .menu,
+  .tarjetas,
+  .opciones{
+      width: 100%;
+      gap: 15px;
+  }
+  .card,
+  .tarjeta{
+      width: 85%;
+      margin: auto;
+  }
+  body{
+      background-position: center;
+      background-size: cover;
+  }
+  h1{
+      font-size: 38px;
+  }
+  h2{
+      font-size: 26px;
+  }
+  p{
+      font-size: 16px;
+  }
+}
 
