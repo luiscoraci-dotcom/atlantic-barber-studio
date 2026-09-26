@@ -122,7 +122,8 @@ body.inicio {
   background-image: url("https://i.pinimg.com/1200x/19/78/6a/19786a8f0b92079e0191e5d988a3ba16.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: auto;
+  height: auto;
 }
   .card h5 {
     color: white;
