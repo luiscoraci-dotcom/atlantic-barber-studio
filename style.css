@@ -117,23 +117,6 @@ h4 {
   background-size: cover;
   background-position: center;
   min-height: 250px;
-  body.inicio .contenedor,
-body.inicio section {
-    transform: scale(1.2);
-    transform-origin: top center;
-}
-body.inicio h1 {
-    font-size: 45px;
-}
-body.inicio h2 {
-    font-size: 35px;
-}
-body.inicio p {
-    font-size: 20px;
-}
-body.inicio .card {
-    min-height: 320px;
-}
 }
 body.inicio {
   background-image: url("https://i.pinimg.com/1200x/19/78/6a/19786a8f0b92079e0191e5d988a3ba16.jpg");
@@ -733,8 +716,9 @@ barbero h2 {
   margin:10px 0;
 }
 .ubicacion {
-    margin-top:80px;
+    margin-top:30px;
     padding:20px;
+    tex-align: center;
 }
 .ubicacion a {
     display:flex;
@@ -773,10 +757,34 @@ barbero h2 {
       width: 100%;
       gap: 15px;
   }
+  .tarjetas {
+    flex-direction:column;
+    width:100%;
+    gap:25px;
+}
+.card {
+    width:90%;
+    height:280px;
+    margin:auto;
+}
+.tarjetas button {
+    width:80%;
+    height:45px;
+    font-size:16px;
+}
+.opciones h4 {
+    font-size:26px;
+}
   .card,
   .tarjeta{
-      width: 85%;
+      width: 95%;
       margin: auto;
+  }
+  .opciones {
+    width: 100%
+  }
+  .card {
+    min-height: 320
   }
   body{
       background-position: center;
